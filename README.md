@@ -61,3 +61,11 @@ For more information on using the Angular CLI, including detailed command refere
 ## Workflow à titre éducatif
 
 Dans app.config, ajout du provideHTTPClient pour centraliser tous les providers (bonnes pratique même si ici projet petite taille).
+
+Dans angular.config, modifier assets pour y intégrer les fichiers statiques (en l'occurence mon data.json fournis)
+
+Mise en place d'un data.service pour permettre de simuler une requêtes GET et afficher le contenu. 
+
+L'idée ici étant de mettre en place l'interpolation 
+
+Utilisation de la boucle @for et du signal data() dans le template pour accéder aux valeurs de Category et de Score
