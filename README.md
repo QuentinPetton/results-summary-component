@@ -69,3 +69,7 @@ Mise en place d'un data.service pour permettre de simuler une requêtes GET et a
 L'idée ici étant de mettre en place l'interpolation 
 
 Utilisation de la boucle @for et du signal data() dans le template pour accéder aux valeurs de Category et de Score
+
+Utilisation de Computed(), signal basé sur mon signal data() lui permetant d'être mis à jour en cas de modification au niveau de mes données.
+
+Utilisation de DecimalPipe pour arrondir mon chiffre en entier dans la moyenne du résultat
