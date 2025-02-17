@@ -1,10 +1,15 @@
 <main>
+  <div class="container">
 <section class="result">
   <h1>Your Result</h1>
   <div>
-    {{averageScore() | number:'1.0-0' }} of 100
+    <span>
+
+      {{averageScore() | number:'1.0-0' }}
+    </span>
+    <span> of 100</span>
   </div>
-  <span>Great</span>
+  <span class="congratulation">Great</span>
   <p>You scored higher than 65% of the people who have taken these tests.</p>
 </section>
 
@@ -13,14 +18,20 @@
   <div>
     <ul>
       @for (item of data(); track item.category){
-        <li>
-          <img src="{{item.icon}}" alt="icon-{{item.category}}">
-          <span>{{item.category}}</span>
-          <span>{{item.score}} / 100 </span>
+        <li class="{{item.category}}">
+          <div class="category-icon">
+            <img src="{{item.icon}}" alt="icon-{{item.category}}">
+            <span>{{item.category}}</span>
+          </div>
+          <div>
+            <span>{{item.score}} </span>
+            <span>/ 100</span>
+          </div>
         </li>
       }
     </ul>
   </div>
   <button>Continue</button>
 </section>
+</div>
 </main>
