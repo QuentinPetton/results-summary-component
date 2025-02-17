@@ -1,0 +1,29 @@
+:root {
+  --Light-red: #ff5757;
+  --Orangey-yellow:#ffb01f;
+  --Green-teal:#00bd91;
+  --Cobalt-blue:#1125d4;
+  --Light-slate-blue:#7857ff;
+  --Light-royal-blue:#2e2be9;
+  --Violet-blue:#4e21ca;
+  --Persian-blue:#2421ca00;
+  --Pale-blue:#ebf1ff;
+  --Light-lavender:#c8c7ff;
+  --Dark-gray-blue:#303b5a;
+}
+
+
+main {
+  height: 100vh;
+  display: flex;
+  border-radius: 20%;
+  justify-content: center;
+  align-items: center;
+}
+.result {
+  background-color: blue;
+}
+.summary {
+  background-color: red;
+}
+

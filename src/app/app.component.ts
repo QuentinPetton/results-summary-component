@@ -1,12 +1,11 @@
 import { Component, computed, inject } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { DataService } from './data.service';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { DecimalPipe } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, DecimalPipe],
+  imports: [DecimalPipe],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
